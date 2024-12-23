@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Lingual Sense (Language Detection App)</title>
+    <!-- Link to Bootstrap CSS and Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #6a11cb, #007bff);
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            color: #007bff;
+        }
+        .header {
+            font-weight: 600;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #6a11cb;
+            border: none;
+            color: white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #9d2cff;
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card p-4">
+                <h1 class="header">About Lingual Sense</h1>
+                <div class="section">
+                    <p>Lingual Sense is a cutting-edge application designed to detect languages from text, images, and PDF files. Powered by advanced GRU-based deep learning models, our app offers precise language predictions across a variety of input formats.</p>
+                </div>
+                <div class="section">
+                    <div class="section-title">Features</div>
+                    <ul>
+                        <li>Detect languages from plain text paragraphs.</li>
+                        <li>Extract and identify language from images using OCR.</li>
+                        <li>Process multi-page PDFs to extract text and predict language.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <div class="section-title">Technology Used</div>
+                    <p>We leverage the power of GRU (Gated Recurrent Units), TensorFlow, Tesseract OCR, and Flask to deliver a seamless and accurate language detection experience.</p>
+                </div>
+                <hr>
+                <a href="/" class="btn btn-custom w-100">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
