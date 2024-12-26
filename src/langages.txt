@@ -1,0 +1,60 @@
+texts = [
+     "مرحبًا بك في عالم اللغة والتواصل. اللغة هي جسر يجمع الناس من مختلف الثقافات والخلفيات. عندما تتعلم لغة جديدة، فإنك تفتح بابًا لفهم الآخرين بشكل أعمق وتوسيع آفاقك.",
+     "语言是人与人之间沟通的重要工具。通过学习一种新语言，我们可以更好地了解不同文化的背景和习俗，同时扩大我们的国际视野。",
+     "Sprog er en nøgle til forståelse og forbindelse mellem mennesker. Når vi lærer et nyt sprog, åbner vi døre til nye kulturer og oplevelser, der kan berige vores liv.",
+     "Taal is een krachtig middel om mensen met elkaar te verbinden. Door een nieuwe taal te leren, kunnen we de wereld om ons heen beter begrijpen en verschillende perspectieven ontdekken.",
+     "Hand gesture recognition plays a crucial role in human-computer interaction and sign language interpretation. The objective of this proposed system is to develop a hand gesture recognition system for controlling a media player",
+     "Keel on võimas tööriist inimeste vahelise suhtluse jaoks. Uue keele õppimine avab ukse uutele võimalustele ja aitab mõista erinevaid kultuure.",
+     "La langue est un outil puissant pour établir des liens entre les gens. Apprendre une nouvelle langue permet de découvrir de nouvelles cultures et d'élargir ses horizons.",
+   "Sprache ist ein wichtiger Schlüssel zur Verbindung von Menschen. Das Erlernen einer neuen Sprache eröffnet die Möglichkeit, andere Kulturen zu verstehen und die Welt anders zu sehen.",
+     "Η γλώσσα είναι ένα εργαλείο που συνδέει τους ανθρώπους. Μαθαίνοντας μια νέα γλώσσα, ανοίγουμε πόρτες σε διαφορετικούς πολιτισμούς και εμπειρίες.",
+    "भाषा लोगों को जोड़ने का एक महत्वपूर्ण साधन है। एक नई भाषा सीखने से न केवल हमारी समझ बढ़ती है, बल्कि हमें अलग-अलग संस्कृतियों और परंपराओं को गहराई से समझने का मौका भी मिलता है।",
+     "Bahasa adalah alat penting untuk menghubungkan orang dari berbagai latar belakang. Dengan mempelajari bahasa baru, kita dapat memahami budaya lain dengan lebih baik dan memperluas wawasan kita.",
+   "La lingua è uno strumento fondamentale per connettere le persone. Imparare una nuova lingua apre le porte a nuove culture e modi di pensare.",
+     "言語は人と人をつなぐ架け橋です。新しい言語を学ぶことで、異なる文化や伝統を深く理解し、視野を広げることができます。",
+     "ಭಾಷೆ ಜನರನ್ನು ಸಂಪರ್ಕಿಸಲು ಒಂದು ಮುಖ್ಯ ಸಾಧನವಾಗಿದೆ. ಹೊಸ ಭಾಷೆಯನ್ನು ಕಲಿಯುವುದರಿಂದ ನಮ್ಮ ಅರಿವು ಹೆಚ್ಚಾಗುತ್ತದೆ ಮತ್ತು ವಿವಿಧ ಸಂಸ್ಕೃತಿಗಳನ್ನು ಒಳಗೊಂಡು ನೋಡಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.",
+     "언어는 사람들을 연결하는 중요한 도구입니다. 새로운 언어를 배우면 다른 문화와 전통을 깊이 이해하고 시야를 넓힐 수 있습니다.",
+     "Lingua est instrumentum humanitatis ad coniungendos populos. Novam linguam discendo, portas aperimus ad culturas varias et novas perspective.",
+    "ഭാഷ മനുഷ്യരെ ബന്ധിപ്പിക്കുന്ന ഒരു പ്രധാന ഉപകരണമാണ്. ഒരു പുതിയ ഭാഷ പഠിക്കുന്നത്, നിങ്ങൾക്ക് വിവിധ സാംസ്കാരികങ്ങളെ കുറിച്ച് കൂടുതൽ മനസിലാക്കാനും നിങ്ങളുടെ കാഴ്ചപ്പാട് വികസിപ്പിക്കാനും സഹായിക്കുന്നു.",
+    "زبان ابزار مهمی برای برقراری ارتباط بین افراد است. یادگیری یک زبان جدید درک عمیق‌تری از فرهنگ‌ها و سنت‌های مختلف به ما می‌دهد.",
+   "A linguagem é uma ponte que conecta pessoas de culturas diferentes. Aprender um novo idioma amplia seus horizontes e aprofunda sua compreensão do mundo.",
+     "ژبه د خلکو تر منځ د اړیکو لپاره یو مهم وسیله ده. د یوې نوې ژبې زده کړه د مختلفو کلتورونو او دودونو د ښه پوهیدو لپاره دروازې پرانیزي.",
+     "Limba este un mijloc esențial de conectare între oameni. Învățarea unei limbi noi deschide uși către noi culturi și perspective.",
+     "Язык является важным инструментом общения между людьми. Изучая новый язык, мы открываем для себя новые культуры и расширяем кругозор.",
+    "El lenguaje es un puente que conecta a las personas de diferentes culturas. Aprender un nuevo idioma no solo amplía tus horizontes, sino que también profundiza tu comprensión del mundo.",
+     "Språk är en bro som förenar människor från olika kulturer. Att lära sig ett nytt språk öppnar dörrar till nya upplevelser och förståelse.",
+     "மொழி மனிதர்களை இணைக்கும் ஒரு முக்கிய சாதனமாகும். புதிய மொழியை கற்றுக்கொள்வதால் நாம் பல்வேறு பண்பாடுகளை புரிந்துகொள்ள முடியும்.",
+    "ภาษาเป็นเครื่องมือสำคัญที่เชื่อมโยงผู้คนจากหลากหลายวัฒนธรรม การเรียนรู้ภาษาที่สามช่วยขยายมุมมองและความเข้าใจต่อโลกและวัฒนธรรมอื่น ๆ",
+     "Dil, farklı kültürlerden insanları birleştiren bir köprüdür. Yeni bir dil öğrenmek, ufkunuzu genişletir ve dünyayı daha iyi anlamanızı sağlar.",
+    "زبان لوگوں کو جوڑنے کا ایک اہم ذریعہ ہے۔ نئی زبان سیکھنا نہ صرف آپ کی سمجھ کو گہرا کرتا ہے بلکہ مختلف ثقافتوں اور روایات کو سمجھنے کا موقع بھی فراہم کرتا ہے۔"
+]
+
+
+# "Arabic":
+# "Chinese":
+# "Danish":
+# "Dutch":
+# "English":
+# "Estonian":
+# "French":
+#  "German":
+# "Greek":
+#  "Hindi":
+# "Indonesian":
+#  "Italian": 
+# "Japanese":
+# "Kannada":
+# "Korean":
+# "Latin":
+# "Malayalam":
+#  "Persian":
+#   "Portuguese":
+# "Pushto":
+# "Romanian":
+# "Russian":
+# "Spanish"
+# "Swedish":
+# "Tamil":
+#  "Thai":
+# "Turkish":
+#  "Urdu":
