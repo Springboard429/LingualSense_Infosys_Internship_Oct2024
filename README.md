@@ -1,4 +1,4 @@
-### README for **LingualSense Language Detection App**
+### LingualSense Natural Language Detection App**
 
 ---
 
