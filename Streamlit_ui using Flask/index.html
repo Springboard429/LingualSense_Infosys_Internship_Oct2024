@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .result {
+            font-size: 18px;
+            margin: 20px;
+            color: #333;
+        }
+        .sentence {
+            font-weight: bold;
+        }
+        .language {
+            color: #007BFF;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Language Detection</h2>
+        <p>Enter a paragraph and detect the language of each sentence.</p>
+        
+        <form action="/" method="POST">
+            <textarea name="paragraph" placeholder="Enter your Sentence here..." required></textarea>
+            <br><br>
+            <button type="submit">Detect Language</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result-box">
+            <h3>Detected Languages:</h3>
+            {% for sentence, language in prediction %}
+                <p class="result">
+                    <span class="sentence">{{ sentence }}</span><br>
+                    <span class="language">{{ language }}</span>
+                </p>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
