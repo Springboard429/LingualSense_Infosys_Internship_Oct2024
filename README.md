@@ -63,7 +63,7 @@ LingualSense/
 ├── dataset/                     # Dataset files
 │   ├── LingualSense_dataset[1].csv            # Combined dataset
 ├── models/                   # Pre-trained models
-├── scripts/                  # Scripts for tasks
+├── src/                  # Scripts for tasks
 │   ├── LingualSense_DL.ipynb # Deep learning notebook
 │   ├── LingualSense_ML.ipynb # Machine learning notebook
 │   ├── UI/                   # User interface
